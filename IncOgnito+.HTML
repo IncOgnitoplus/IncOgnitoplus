@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="incognito.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VisionArch Architecture - Innovative Designs, Exceptional Spaces">
+    <title>Inc.Ognito Architects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        header:hover {
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+
+        .hero {
+            background: url('sample-hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 500px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 3em;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        .hero h2 {
+            transition: transform 0.5s ease;
+        }
+
+        .hero:hover h2 {
+            transform: scale(1.1);
+        }
+
+        .section {
+            padding: 60px 30px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .about,
+        .services {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2,
+        .services h2 {
+            margin-bottom: 40px;
+        }
+
+        .about .team,
+        .services .service-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .about .team .architect,
+        .services .service-list .service {
+            width: 220px;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about .team .architect img,
+        .services .service-list .service img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .about .team .architect:hover,
+        .services .service-list .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .about .team .architect:hover img,
+        .services .service-list .service:hover img {
+            transform: scale(1.05);
+        }
+
+        .works .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        .works .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .works .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        footer:hover {
+            background-color: #444;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+ footer { background: #333; color: #fff; padding: 1rem; text-align: center; }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Inc. Ognito+</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#works">Our Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</style>
+
+
+ <div class="section video" id="video">
+    <h2>Watch Our Latest Project</h2>
+    <iframe width="1500" height="1000" src="https://www.youtube.com/embed/gw-yvAqCU-g?si=ZfQLndv8rtDIpaN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <div class="section about" id="about">
+        <h2>About Us</h2>
+        <p>At VisionArch, we believe in designing spaces that inspire and create lasting impressions. Our team of innovative architects brings years of experience and creativity to every project.</p>
+
+        <div class="team">
+            <!-- Architect 1 -->
+            <div class="architect">
+                <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/462536086_3869867569949297_2461831028171857901_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGgv1n1Lfvozej_v2ke0Jg9wpJmHQKA6YzCkmYdAoDpjA1jepobTrPXROsiEOSWU_yY2vNzOjhskDRlwMOFRizE&_nc_ohc=2ZWNW_vmqJcQ7kNvgEMLcv5&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&oh=03_Q7cD1QGY2ghkOHLdLOfModylgj8izT8mmCvfD-2YZc5wnSrVsQ&oe=675314C5">
+                <h3>Ar. John Norbert Guzman</h3>
+                <p>Principal Architect</p>
+            </div>
+
+            <!-- Architect 2 -->
+            <div class="architect">
+                <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/462550419_416085908228131_9091744360724692402_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEhzC0zaiHWiswrLQLAoduVX7eOjRMqvBVft46NEyq8Farsor61UvFVvtUAd7sY3qgNrgHfQEfo5cA7CdlJoGei&_nc_ohc=0JVhiXGVxWcQ7kNvgEKUpGT&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&oh=03_Q7cD1QH79qa3p-z467D2qE5cD3bWemUl3Nzs3CJ4Cs2QXj3IZA&oe=6752DAC0" alt="Architect 2">
+                <h3>Ar. Delfin George Ednalaga</h3>
+                <p>CUAP, Senior Architect</p>
+            </div>
+
+            <!-- Architect 3 -->
+            <div class="architect">
+                <img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.15752-9/462571666_1119936832888682_449545924099633518_n.png?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE8Z-RwfOXXI4iLcXgN1wnehQiBuBSv96yFCIG4FK_3rOrbdcz_vgCZNeW9KjqIf8OLvx0ZWZ3_V48g9zv7PfbQ&_nc_ohc=bldkP1DhWyAQ7kNvgGNXUq_&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&oh=03_Q7cD1QEytNDsdBlAAD28PPI2Nl0LnXX6AvCqVxaou1zBCbrh4w&oe=6752DDA9">
+                <h3>Cyruss Chester Da</h3>
+                <p>Architect</p>
+            </div>
+
+            <!-- Architect 4 -->
+            <div class="architect">
+                <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.15752-9/462567024_589721940077919_5474916877428394776_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEMRIA51LpoHjlIehQjDoHt8XUQDlvujifxdRAOW-6OJ2eGjMhFNAstpyNJ6swcWVrMxs7y7XpZ-8LlcSdkzgYi&_nc_ohc=LN74iKAYvEYQ7kNvgFXhBAl&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&oh=03_Q7cD1QEwCnmNlYhIOFZxz3XEMIsoYfSRJHWqgh5m6pPkLad_DQ&oe=675332C7">
+                <h3>Ar. Aerius Jaug</h3>
+                <p>Architect</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section services" id="services">
+        <h2>Our Services</h2>
+        <p>We offer a wide range of architectural services tailored to your needs. Whether you need a residential, commercial, or custom-designed space, we provide exceptional service from start to finish.</p>
+
+        <div class="service-list">
+            <!-- Service 1 -->
+            <div class="service">
+                <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.15752-9/460429770_420589944380401_2749462913558055607_n.png?stp=dst-png_s2048x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGFP_IfAn_Ke-GVwOIXGGWR1RUe6_T3qQrVFR7r9PepCvQVGYDRKNvvhzaCg-THAepVzDMEuaYICz7NGtCWDCZU&_nc_ohc=z1l5aUF4sAEQ7kNvgFBJN5R&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&oh=03_Q7cD1QGBF3EGOx6t-W2z_SbrAYRbgDdKUo0INr599phcpg6RiA&oe=6752B6EC" alt="Service 1">
+                <h3>Residential Design</h3>
+                <p>We create custom homes that reflect your lifestyle and taste, from modern designs to traditional classics.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service">
+                <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-9/462567718_1234040704496609_1241248437704182743_n.png?stp=dst-png_s2048x2048&_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG9VSwp62PyPNA-5R4opWSdFBi6NwOod7UUGLo3A6h3tSPIOE86kgpIDBJ3sYoCoJF3kTmQD1m--i0KTuo6oAij&_nc_ohc=Yr4pAf0aQ0IQ7kNvgHNtewX&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&oh=03_Q7cD1QFo9YwWdt4cnv11E_50wi87Dd5ucskFa0LEjVP-c00JlQ&oe=6752B637" alt="Service 2">
+                <h3>Commercial Design</h3>
+                <p>Our commercial projects are designed to maximize functionality and aesthetics while meeting business needs.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service">
+                <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/462555757_1257350938637701_708809746106648424_n.png?stp=dst-png_s2048x2048&_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF-UdM5KRjBvF8mLktF9MBBsyKqdkbw3FizIqp2RvDcWIH3geNz5kXftWavHKiGEQSezyCX1edgycKZXlkG23Yl&_nc_ohc=fgG1pysEaI0Q7kNvgEjQH1T&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&oh=03_Q7cD1QGt9kRLbVgKf_Ai84N0KWV7MGiInOWk842W5KOb-3A6iQ&oe=6752A67D" alt="Service 3">
+                <h3>Urban Planning</h3>
+                <p>We specialize in designing urban spaces that are both innovative and sustainable for future communities.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section works" id="works">
+        <h2>Our Works</h2>
+        <div class="gallery">
+            <!-- Work 1 -->
+            <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/462553970_1908746629535736_4960689744261751818_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHyEzhGSi0A6LEZvx4vNsE9SL1mxcO1nQ9IvWbFw7WdD7EQy4f3iMaQ4926ter22hgp-vqdV8Bqydbdiyxoi6YB&_nc_ohc=bU4iSGNiwTkQ7kNvgFRRH2J&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&oh=03_Q7cD1QHRdFvGSfVCHeut2ZhEHLI0yGTlIKCaujTV-hCymjJZ1Q&oe=6752CF1D" alt="Project 1">
+            <!-- Work 2 -->
+            <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-9/462561835_800678902111005_5571616781295385770_n.png?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGzUlV5mfTTXILJBZ9hT8MpdZnQFUZZkbN1mdAVRlmRs56Y0x5S-AkLEr-fUFBbu5aOVzLnL1e2U4WyasaeqpLK&_nc_ohc=NWx3pDWgAVMQ7kNvgHPxbmY&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&oh=03_Q7cD1QEI2TD-vQMZFeAXz7cWkNff2bYo7nwliM5JCX9uHQpxkQ&oe=6752B640" alt="Project 2"> 
+            <!-- Work 3 -->
+            <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-9/462564907_802697935230999_3590347385576162352_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEPrtC1pDFtOEE4ORiwDPYtWNGe5pPATSxY0Z7mk8BNLHXJRWpGTQ7kqDUSEyxpauu5ODCKfiJb9UW1dG9CEKot&_nc_ohc=C2tAAZqwwS4Q7kNvgEpi1Yp&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&oh=03_Q7cD1QHYSB9Xrj_oizP4Hnd-f0ur3Jol7ofGgspnNvVvQOtkXA&oe=6752C70A" alt="Project 3">
+            <!-- Work 4 -->
+            <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/462567203_567274905703197_6945693620247186266_n.jpg?stp=dst-jpg_s2048x2048&_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFuXM3BpqPF_ZeHM-xbEEDpJlJWvB4b8XgmUla8HhvxeBU6lcV0CS5AwrHIYzl-EebnbOsJYBknhS9Poe4MdL--&_nc_ohc=LG8UN7BTeWMQ7kNvgFp7c5D&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&oh=03_Q7cD1QE3f3eY-0ZOC6YaIQ9sr8_nl61y-DnlDYX5SlSzIiANwQ&oe=6752B345" alt="Project 4">
+            <!-- Work 5 -->
+            <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/462559729_2481163565608736_7956193225326429035_n.png?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF0b5kGlYqC1e6H_6zwC74NOzC1DU158dQ7MLUNTXnx1LwhZI7B06Lhbea_i2GrCm00wxdrZ_fCcTu0DRfug3mu&_nc_ohc=yVwdtUK4pqQQ7kNvgF9LmiY&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&oh=03_Q7cD1QFNpO98wAqMEW2WNO9CgMN1qEnZf92KGCf_XYt1ycyrLw&oe=6752E6B6" alt="Project 5">
+            <!-- Work 6 -->
+            <img src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t1.15752-9/462581492_1227714781844901_1917470388545718370_n.jpg?stp=dst-jpg_s2048x2048&_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHC-9VpyzuqxkhbpYLB0atoDypTuna9cRkPKlO6dr1xGdsKWXCvvrHySiV7AqUAidrf80uH6NF9rSXWH60yYpP-&_nc_ohc=ZZSC4IGXIOEQ7kNvgHfEDc1&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&oh=03_Q7cD1QE1fR_bIWXYylxDnqFG2bp8QiR_OhcZ-ANXBCSo5DwnXw&oe=6752C8BD" alt="Project 6">
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to us for any inquiries or project discussions.</p>
+        <p>Email: IncOgnitoplus@gmail.com <a
+
+<footer>
+    <p>&copy; 2024 Architecture Firm. All rights reserved.</p>
+<p>; For educational purposes only.</p>
+</footer>
+
+</body>
+</html>
+
